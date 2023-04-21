@@ -1,0 +1,31 @@
+{
+  "name": "api-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+
+    "start:dev:nodemon:cmd": "cmd.exe /C \"set NODE_ENV=development && .\\node_modules\\.bin\\nodemon .\\build\\index.js\"",
+    "start:dev:powershell": "powershell.exe -Command \"$env:NODE_ENV='development'; .\\node_modules\\.bin\\webpack\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.17.17",
+    "express": "^4.18.2",
+    "pg": "^8.10.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.12",
+    "nodemon": "^2.0.22",
+    "ts-loader": "^9.4.2",
+    "typescript": "^5.0.4",
+    "webpack": "^5.80.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-node-externals": "^3.0.0",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
