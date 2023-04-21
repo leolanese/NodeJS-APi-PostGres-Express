@@ -8,7 +8,7 @@ const {
 
 app.get('/', (req: Request, res: Response) => {
   res.send({
-    message: 'TEST EXPRESS, NODE AND TS wwwww',
+    message: 'TEST EXPRESS, NODE AND TS',
   });
 });
 
